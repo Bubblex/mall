@@ -1,0 +1,24 @@
+@import '../../config/theme.less';
+
+.headerContainer {
+    padding: 34px;
+    background-image: ~"url(./bg.png)";
+    background-size: 100% 100%;
+
+    .status {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        background-image: ~"url(./fail.png)";
+        background-size: 100% 100%;
+        &.success {
+            background-image: ~"url(./success.png)";
+        }
+    }
+
+    .code {
+        font-size: 24px;
+        margin-top: 6px;
+        color: @text-color-second;
+    }
+}

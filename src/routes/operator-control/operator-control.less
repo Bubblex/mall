@@ -1,0 +1,49 @@
+@import '../../config/theme.less';
+
+.container {
+    height: 100%;
+    background: #fff;
+}
+
+.orderBtnContainer {
+    background: #f7f7f7;
+    padding-bottom: @large-space;
+}
+
+.orderBtn {
+    padding: 28px 0;
+    background: #fff;
+    text-align: center;
+
+    a {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .today {
+        border-right: 2px solid #f1f1f1;
+    }
+}
+
+.pickUp {
+    padding: 160px 0;
+    text-align: center;
+    background: #fff;
+    a {
+        width: 100%;
+        padding-top: 180px;
+        display: inline-block;
+        &.qrcode {
+            background-image: ~"url(./qrcode.png)";
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 148px 154px;
+        }
+        &.sn {
+            background-image: ~"url(./sn.png)";
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 148px 154px;
+        }
+    }
+}

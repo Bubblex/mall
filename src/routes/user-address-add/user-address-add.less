@@ -1,0 +1,45 @@
+@import '../../config/theme.less';
+
+.container {
+    padding-top: 32px;
+
+    :global {
+        .am-list-body {
+            border-top: none;
+        }
+        .am-list-body:after {
+            border-bottom: none;
+        }
+        .am-list-item .am-input-label,
+        .am-list-item .am-list-line .am-list-content {
+            font-size: 30px;
+            color: @text-color-second;
+        }
+        .am-list-item .am-input-label.am-input-label-5 {
+            width: 330px;
+
+            span {
+                font-size: 26px;
+                color: @text-color-third;
+            }
+        }
+        .am-list-item .am-input-control input {
+            font-size: 30px;
+            text-align: right;
+            color: @text-color-third;
+        }
+    }
+}
+
+.list {
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+
+.saveBtn {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    border-radius: 0;
+}

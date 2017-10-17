@@ -1,0 +1,113 @@
+@import '../../config/theme.less';
+
+.sidebar {
+    right: 60px;
+    bottom: 130px;
+    position: fixed;
+    min-height: 160px;
+
+    .toHome {
+        width: 74px;
+        height: 74px;
+        display: block;
+        position: relative;
+        background: ~"url(./home.png)";
+        background-size: 100% 100%;
+    }
+
+    .shoppingcart {
+        width: 74px;
+        height: 74px;
+        display: block;
+        position: relative;
+        background: ~"url(./slide-shoppingcart.png)";
+        background-size: 100% 100%;
+        span {
+            top: -6px;
+            right: -10px;
+            height: 36px;
+            color: #fff;
+            min-width: 18px;
+            font-size: 22px;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 36px;
+            border-radius: 24px;
+            text-align: center;
+            position: absolute;
+            display: inline-block;
+            background: @main-color;
+        }
+    }
+    .backtop {
+        width: 74px;
+        height: 74px;
+        display: none;
+        margin-top: 12px;
+        background: ~"url(./slide-backtop.png)";
+        background-size: 100% 100%;
+    }
+}
+
+.tabbarlinkhide {
+    opacity: 0;
+    z-index: -999;
+}
+
+.tabbarlink {
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    background-position: center top 400px;
+    background-image:  ~"url(./logo.png)";
+    background-repeat: no-repeat;
+    background-size: 120px 194px;
+    a {
+        width: 140px;
+        height: 120px;
+        color: #fff;
+        display: block;
+        font-size: 28px;
+        position: absolute;
+        padding-top: 130px;
+        text-align: center;
+        background-size: 110px auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+        &.season {
+            bottom: 30px;
+            left: 10%;
+            background-image: ~"url(./tabbar-season.png)";
+        }
+        &.ranking {
+            bottom: 110px;
+            left: 30%;
+            background-image: ~"url(./tabbar-ranking.png)";
+        }
+        &.activity {
+            bottom: 110px;
+            right: 30%;
+            background-image: ~"url(./tabbar-activity.png)";
+        }
+        &.new {
+            bottom: 30px;
+            right: 10%;
+            background-image: ~"url(./tabbar-new.png)";
+        }
+    }
+    .close {
+        left: 50%;
+        width: 1rem;
+        height: 1rem;
+        bottom: 0.15rem;
+        position: absolute;
+        margin-left: -0.5rem;
+        background-image: ~"url(./tabbar-close.png)";
+        background-size: 100% 100%;
+    }
+}

@@ -1,0 +1,118 @@
+@import '../../config/theme.less';
+
+.list {
+    margin-bottom: 33PX;
+}
+
+.ticket {
+    width: 100%;
+    position: relative;
+}
+
+.ticketTitle,
+.unticketTitle {
+    width: 75%;
+    padding: 25px 0 25px 20px;;
+    color: @text-color-first;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-right: 2px dashed #f1ac00;
+    box-shadow: 0px 0px 8px #ededed;
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 36px;
+        span {
+            color: @main-color;
+            font-size: 24px;
+            font-weight: initial;
+        }
+    }
+    .scene {
+        font-size: 26px;
+    }
+    .end_date {
+        font-size: 26px;
+        color: @text-color-third;
+        padding-top: 10px;
+        span {
+            padding-right: 30px;
+            background-size: 23px;
+            background-position: 100% center;
+            background-repeat: no-repeat;
+        }
+    }
+    .down {
+        background-image: ~"url(./icon-down.png)";
+    }
+    .up {
+        background-image: ~"url(./icon-up.png)";
+    }
+}
+
+.unticketTitle {
+    border-right: 2px dashed #aeaeae;
+    .down {
+        background-image: ~"url(./icon-undown.png)";
+    }
+    .up {
+        background-image: ~"url(./icon-unup.png)";
+    }
+}
+
+.ticketType,
+.unticketType {
+    width: 24%;
+    height: 100%;
+    padding: 25px 6px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #f1ac00;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1%;
+    &:after {
+        content: '';
+        width: 9px;
+        height: 100%;
+        background-image: ~"url(./serrated2.png)";
+        background-size: 100%;
+        background-repeat: repeat-y;
+        position: absolute;
+        right: -8px;
+        top: 0;
+        bottom: 0;
+    }
+    :global(.am-flexbox-item) {
+        text-align: center;
+        margin: auto;
+        flex: 0;
+    }
+    :global(.am-flexbox-item:first-child) {
+        margin-left: auto;
+    }
+    .btn {
+        font-size: 22px;
+        padding: 6px 15px;
+        border: 1px solid #fff;
+        border-radius: 50px;        
+    }
+}
+
+.unticketType {
+    background-color: #aeaeae;
+    &:after {
+        background-image: ~"url(./unserrated2.png)";
+    }
+}
+
+.info {
+    font-size: 26px;
+    color: @text-color-third;
+    padding: 15px 25px 15px 20px;
+    background-color: #fff;
+    border-top: 2px dashed #e9e9e9;
+    box-shadow: 0px 0px 8px #ededed;
+}

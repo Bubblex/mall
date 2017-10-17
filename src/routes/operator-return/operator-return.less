@@ -1,0 +1,40 @@
+@import '../../config/theme.less';
+
+.container {
+    :global {
+        .am-button {
+            border-radius: 0;
+        }
+    }
+
+}
+
+.list {
+    margin: @large-space 0;
+    :global {
+        .am-list-body {
+            border-top: 0;
+        }
+        .am-list-body:after {
+            border-bottom: 0;
+        }
+        .am-list-item .am-input-label.am-input-label-5,
+        .am-textarea-label.am-textarea-label-5 {
+            width: 100px;
+        }
+        .am-list-item.am-textarea-item:after,
+        .am-list-item.am-input-item:after {
+            border-bottom: none;
+        }
+        .am-list-item .am-input-control input,
+        .am-textarea-control textarea {
+            font-size: 30px;
+            padding: 2%;
+            border: 2px solid #ddd;
+        }
+
+        .am-textarea-control textarea {
+            width: 96%;
+        }
+    }
+}

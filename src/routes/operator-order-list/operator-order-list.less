@@ -1,0 +1,83 @@
+@import '../../config/theme.less';
+
+.date {
+    :global {
+        .am-list-thumb {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .am-list-extra{
+            flex: 0.8;
+        }
+        .am-list-line .am-list-content {
+            font-size: 30px;
+            color: @text-color-second;
+        }
+        .am-list-line .am-list-extra {
+            font-size: 28px;
+            color: @text-color-second;
+            span {
+                font-weight: bold;
+                color: @main-color;
+            }
+        }
+    }
+}
+
+.packages {
+    margin-top: 26px;
+}
+
+.packagesTitle {
+    @height: 46px;
+    
+    padding: 20px 30px;
+    background: #d4eaf9;
+
+    .number {
+        color: #111;
+        background: #fff;
+        padding: 0 10px;
+        height: @height;
+        text-align: center;
+        line-height: @height;
+        border-radius: @height/2;
+        min-width: @height - 20px;
+    }
+
+    .right {
+        text-align: right;
+    }
+}
+
+.orderItem {
+    margin-top: @medium-space;
+    
+    :global(.am-list-body) {
+        border-top: none;
+    }
+
+    :global(.am-list-body:after) {
+        border-bottom: none;
+    }
+
+    :global(.am-list-content) {
+        img {
+            width: 126px;
+            height: 110px;
+            margin-right: 14px;
+        }
+    }
+
+    .orderNum {
+        font-size: 30px;
+        color: @text-color-second;
+    }
+
+    .orderCount {
+        color: @main-color;
+    }
+}
+

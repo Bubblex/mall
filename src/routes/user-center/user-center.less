@@ -1,0 +1,126 @@
+@import '../../config/theme.less';
+
+.basicContainer {
+    padding-bottom: 120px;
+}
+
+.userTop,
+.operatorTop {
+    width: 100%;
+    padding: 35px 33px;
+    background-image: ~"url(./bg-user.jpg)";
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    :global(.am-flexbox-item) {
+        &:nth-child(2) {
+            margin-left: 33px;
+        }
+    }
+}
+
+.operatorTop {
+    background-image: ~"url(./bg-operator.jpg)";
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+
+.code {
+    color: #000;
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.edit {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 10px 5px 35px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.3);
+    background-image: ~"url(./icon-edit.png)";
+    background-size: 17px 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.click {
+    color: #906c00;
+    font-size: 26px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background-color: #ffea00;
+}
+
+.grid {
+    padding: 20px 0;
+    background-color: #fff;
+    color: @text-color-first;
+    :global(.am-flexbox) {
+        text-align: center; 
+    }
+    :global(.am-flexbox-item) {
+        border-right: 2px solid #f1f1f1;
+        margin-left: 0;
+        &:last-child {
+            border: none;
+        }
+        p:first-child {
+            color: @main-color;
+            font-size: 36px;
+            span {
+                font-size: 24px;
+            }
+        }
+        p:last-child {
+            padding-top: 10px;
+            font-size: 26px;
+        }
+    }
+}
+
+.list {
+    margin-top: 20px;
+    :global(.am-list) {
+        :global(.am-list-content) {
+            color: @text-color-first;
+            font-size: 30px;      
+        }
+        :global(.am-list-line) {
+            &:after {
+                border-bottom: 2px solid #f1f1f1!important;          
+            }
+        }
+    }
+    :global(.am-list-body) {
+        border-top: 0;
+        &:after {
+            border-bottom: 0;
+        }
+    }
+
+    .console {
+        margin-bottom: 20px;
+    }
+}
+
+.unreadNum {
+    color: #fff;
+    font-size: 24px;
+    padding: 0 6px;
+    min-width: 26px;
+    line-height: 38px;
+    text-align: center; 
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: @main-color;
+}

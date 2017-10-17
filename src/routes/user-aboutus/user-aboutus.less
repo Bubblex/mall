@@ -1,0 +1,41 @@
+@import '../../config/theme.less';
+
+.container {
+    text-align: center;
+    color: @text-color-first;
+    padding: 60px 27px 120px 37px;    
+}
+
+.title {
+    font-size: 38px;
+    padding: 0 15px;
+    background-color: @body-color;
+}
+
+.info {
+    font-size: 30px;
+    text-align: left;
+    line-height: 40px;
+    margin-top: -20px;
+    padding-top: 60px;
+    border-top: 2px solid #eeeeee;
+    img {
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+        display: block;
+    }
+}
+
+.contact {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    :global(.am-button) {
+        border-radius: 0;
+    }
+    span {
+        font-size: 36px;        
+        color: @main-color;
+    }
+}

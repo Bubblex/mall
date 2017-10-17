@@ -1,0 +1,28 @@
+@import '../../config/theme.less';
+
+.item {
+    :global {
+        .am-list-thumb {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .am-list-extra{
+            flex: 0.8;
+        }
+        .am-list-line .am-list-content {
+            font-size: 30px;
+            color: @text-color-second;
+        }
+        .am-list-line .am-list-extra {
+            font-size: 28px;
+            color: @text-color-second;
+            span {
+                font-weight: bold;
+                color: @text-color-first;
+            }
+        }
+    }
+
+}

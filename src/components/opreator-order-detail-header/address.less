@@ -1,0 +1,35 @@
+@import '../../config/theme.less';
+
+
+.container {
+    @height: 46px;
+
+    padding: 26px;
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+    .number {
+        color: white;
+        padding: 0 10px;
+        height: @height;
+        text-align: center;
+        line-height: @height;
+        background: #fabd02;
+        border-radius: @height/2;
+        min-width: @height - 20px;
+    }
+
+    .name {
+        font-size: 30px;
+        color: @text-color-second;
+        a {
+            margin-left: 16px;
+            color: @text-color-second;
+        }
+    }
+
+    .address {
+        margin-top: 8px;
+        font-size: 28px;
+        color: @text-color-third;
+    }
+}

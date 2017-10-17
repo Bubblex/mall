@@ -1,0 +1,60 @@
+@import '../../config/theme';
+
+.container {
+    background: #fff;
+    padding-bottom: 100px;
+}
+
+.oneLevelFlex {
+    width: auto;
+}
+
+.oneLevel {
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 10px 16px;
+    background: #f0f0f0;
+
+    :global {
+        .am-button-small {
+            padding: 0;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            &:last-of-type {
+                margin-bottom: 130px;
+            }
+        }
+    }
+
+    .common {
+        border: none;
+        color: @text-color-first;
+        background: transparent;
+    }
+}
+
+.listContainerFlex {
+    padding: 30px 26px;
+    margin-left: 160px!important;
+
+    :global {
+        .am-button-small {
+            margin-right: 20px;
+            color: @main-color;
+            margin-bottom: 20px;
+            background: #fbd9d9;
+            border-color: #f6b3b3;
+        }
+    }
+
+    .common {
+        background: #ebebeb;
+        color: @text-color-second;
+        border-color: #d6d6d6;
+    }
+}

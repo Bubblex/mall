@@ -1,0 +1,167 @@
+@import '../../config/theme';
+
+@height: 100px;
+
+.container {
+    padding-bottom: @height + 40;
+}
+
+.tabContainer {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 3;
+    height: @height;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 -4px 40px 0 rgba(191,191,191,.2);
+}
+
+.flexbox {
+    height: @height;
+}
+
+.selectAll {
+    padding-left: 27px;
+    padding-right: 50px;
+}
+
+.total {
+    .label {
+        color: #999;
+    }
+}
+
+.settle {
+    color: #fff;
+    height: @height;
+    display: block;
+    min-width: 160px;
+    text-align: center;
+    line-height: @height;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: @main-color;
+}
+
+.goodsContainer {
+    background-color: #fff;
+    .menuTitle {
+        margin-top: 14px;
+    }
+    &:first-child {
+        .menuTitle {
+            margin-top: 0;
+        }
+    }
+}
+
+.goods {
+    padding: 30px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.understock {
+    background-color: #f0f0f0;
+}
+
+.forbiddenStatus {
+    background: #f0f0f0;
+}
+
+.select {
+    align-self: center;
+    padding-right: 18px;
+}
+
+.title {
+    overflow: hidden;
+    font-size: 28px;
+    white-space: nowrap;
+    padding-right: 30px;
+    text-overflow: ellipsis;
+}
+
+.detail {
+    position: relative;
+    padding-left: 14px;
+}
+
+.image {
+    width: 160px;
+}
+
+.current {
+    font-size: 32px;
+}
+
+.original {
+    color: @text-color-third;
+    margin-left: 9px;
+    text-decoration: line-through;
+    font-size: 28px;
+}
+
+.size {
+    color: @text-color-third;
+    font-size: 24px;
+}
+
+.delete {
+    top: 5px;
+    right: 0;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    background-size: 100%;
+    background-image: ~"url(./delete.png)";
+}
+
+.stepperContainer {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.menuTitle {
+    padding: 25px 30px;
+    font-size: 28px;
+    border-bottom: 1px solid #dedede;
+}
+
+.understockTag {
+    color: #8e680d;
+    font-size: 24px;
+    padding: 4px 8px;
+    background-color: #ffbf25;
+}
+
+.noCart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    height: 800px;
+    text-align: center;
+    padding-top: 466px;
+    background-image: ~"url(./no-cart.png)";
+    background-repeat: no-repeat;
+    background-position: center top 262px;
+    background-size: 334px 134px;
+
+    p {
+        margin-bottom: 42px;
+        color: @text-color-third;
+    }
+    :global(.am-button) {
+        height: 48px;
+        font-size: 28px;
+        line-height: 48px;
+        padding-left: 26px;
+        padding-right: 26px;
+        display: inline-block;
+        margin-right: 12px;
+        margin-left: 12px;
+        border-radius: 24px;
+    }
+}

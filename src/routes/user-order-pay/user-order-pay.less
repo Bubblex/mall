@@ -1,0 +1,147 @@
+@import '../../config/theme';
+
+.container {
+    padding-bottom: 124px;
+}
+
+.list {
+    :global(.am-list-line) {
+        :global(.am-list-extra) {
+            flex: 3;
+            font-size: 28px;
+            p {
+                text-align: left;
+            }
+        }
+        :global(.am-list-brief) {
+            margin-top: 0;
+        }
+    }
+
+    :global {
+        .am-list-body {
+            border: none;
+            &:after {
+                border: none;
+            }
+        }
+        .am-list-body div:not(:last-child) .am-list-line:after {
+            border: none;
+        }
+    }
+}
+
+.price {
+    margin-top: @medium-space;
+
+    :global {
+        .am-list-line {
+            .am-list-extra {
+                flex: 1;
+                p {
+                    text-align: right;
+                }
+            }
+        }
+
+        .am-list-body div:not(:last-child) .am-list-line:after {
+            border: none;
+        }
+    }
+}
+
+.remark {
+    margin-top: @medium-space;
+    textarea {
+        font-size: 28px;
+        line-height: 40px;
+        color: @text-color-first;
+    }
+    :global {
+        .am-list-body div:not(:last-child) .am-list-line:after {
+            border: none;
+        }
+        .am-list-item .am-list-line .am-list-content {
+            padding-bottom: 0;
+        }
+        .am-list-item.am-list-item-middle .am-list-line {
+            max-height: 50px;
+            min-height: 50px;
+        }
+    }
+
+    .noBorderItem {
+        max-height: 50px;
+        min-height: 50px;
+        overflow: hidden;
+    }
+}
+
+.allPrice {
+    :global {
+        .am-list-extra {
+            s {
+                font-size: 24px;
+                color: @text-color-third;
+            }
+        }
+        .am-list-line {
+            &:after {
+                border: none;
+            }
+        }
+    }
+}
+
+.cardPrice {
+    :global {
+        .am-list-extra {
+            p {
+                font-size: 32px;
+                color: @main-color;
+            }
+        }
+        .am-list-line {
+            padding-right: 0;
+            margin-right: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+}
+
+.addressItem {
+    :global {
+        .am-list-line {
+            padding-right: 0;
+            margin-right: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+}
+
+.rightPrice {
+    :global {
+        .am-list-extra {
+            span {
+                font-size: 32px;
+                color: @main-color;
+            }
+        }
+    }
+}
+
+
+
+.extra {
+    p {
+        color: @text-color-first;
+        span {
+            margin-left: @medium-space;
+        }
+        &.noCanUse {
+            span {
+                color: @text-color-third;
+            }
+        }
+    }
+}

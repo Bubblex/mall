@@ -1,0 +1,76 @@
+@import '../../config/theme.less';
+
+
+.container {
+    min-height: 100%;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 222;
+    position: fixed;
+    background-color: #fff;
+
+    :global(.am-navbar-left-icon) {
+        color: #3d3d3d;
+    }
+}
+
+.avatarContainer {
+    padding: 36px 0;
+    text-align: center;
+    margin-bottom: 34px;
+    background: ~"url(./bg.jpg)";
+    background-size: 100% 100%;
+
+    img {
+        width: 114px;
+        height: 114px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        border: 2px solid #fff;
+        box-shadow: 0 4px 20px rgba(0,0,0,.2)
+    }
+
+    a {
+        font-size: 30px;
+        color: @text-color-first;
+    }
+}
+
+.list {
+    :global {
+        .am-list-body {
+            border-top: none;
+        }
+        .am-list-body:after {
+            border-bottom: none;
+        }
+        .am-list-item .am-list-line .am-list-content {
+            font-size: 30px;
+            color: @text-color-second;
+        }
+        .am-list-item .am-list-line .am-list-extra {
+            flex: 3;
+            font-size: 30px;
+            text-align: left;
+            color: @text-color-first;
+        }
+
+    }
+    .noneData {
+        color: @text-color-second;
+    }
+    .hasChangeIcon {
+        :global {
+            .am-list-line .am-list-arrow {
+                background-image: ~"url(./change.png)";
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../config/theme.less';
+
+.container {
+
+    .taste {
+        background: #fff;
+        padding: 30px;
+
+        p {
+            color: @text-color-second;
+        }
+
+        :global {
+            .am-button {
+                background: #eaeaea;
+            }
+            .am-button-primary {
+                background: @main-color;
+            }
+        }
+    }
+
+    .tags {
+        border-radius: 0;
+        position: relative;
+        margin-right: 20px;
+        margin-bottom: 15px;
+
+        .checkbox {
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+
+
+
+    .confirm {
+        border-radius: 0;
+        margin: 40px 30px;
+    }
+}

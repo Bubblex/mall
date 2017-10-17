@@ -1,0 +1,30 @@
+@import '../../config/theme';
+
+
+.container {
+    :global {
+        .am-list-body {
+            border-top: 0;
+        }
+        .am-list-body:after {
+            border-bottom: 0;
+        }
+    }
+}
+
+.header {
+    padding: 30px;
+    color: @text-color-first;
+
+    span {
+        background: #fff;
+        border: 1px solid @main-color;
+        padding: 8px 20px;
+    }
+}
+
+.list {
+    overflow: hidden;
+    padding: 10px 30px;
+    background: #fff;
+}

@@ -1,0 +1,119 @@
+@import '../../config/theme.less';
+
+.container {
+    min-height: 100%;
+    background: #fff;
+    padding: 234px 40px 0;
+    box-sizing: border-box;
+}
+
+.containerUpdate {
+    min-height: 100%;
+    background: #fff;
+    padding: 130px 50px 0;
+    box-sizing: border-box;
+
+    :global {
+        .am-steps-label-vertical .am-steps-main .am-steps-title {
+            font-size: 28px;
+            font-weight: normal;
+            color: @text-color-second;
+        }
+
+        .am-steps-item {
+            margin-right: -50px!important;
+        }
+
+        .am-steps-label-vertical .am-steps-tail {
+            padding-right: 0!important;
+        }
+    }
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 26px;
+    color: @text-color-second;
+}
+
+.inputContainer {
+    height: 94px;
+    border-radius: 6px;
+    background: #f0f0f0;
+    margin-bottom: 48px;
+
+    input {
+        width: 100%;
+        border: none;
+        padding: 0 16px;
+        margin-top: 30px;
+        appearance: none;
+        background: transparent;
+    }
+}
+
+.shortInput {
+    input {
+        width: 60%;
+        float: left;
+    }
+
+    a {
+        float: right;
+        line-height: 94px;
+        margin-right: 20px;
+    }
+
+    .disabled {
+        float: right;
+        font-size: 24px;
+        line-height: 94px;
+        margin-right: 20px;
+        color: @text-color-second;
+    }
+}
+
+.confirm {
+    border-radius: 0;
+}
+
+.smallTittle {
+    margin: 80px 0 60px;
+    text-align: center;
+    color: @text-color-first;
+
+    &:before {
+        content: '';
+        top: 8px;
+        width: 30px;
+        height: 40px;
+        margin-right: 10px;
+        position: relative;
+        display: inline-block;
+        background-image: ~'url(./phone.png)';
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.finish {
+    text-align: center;
+    padding: 180px 0;
+
+    p {
+        font-size: 40px;
+        padding-top: 80px;
+        margin-bottom: 30px;
+        background-image: ~'url(./finish.png)';
+        background-size: 68px;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    a {
+        padding: 8px 16px;
+        border-radius: 2px;
+        border: 2px solid @main-color;
+    }
+}

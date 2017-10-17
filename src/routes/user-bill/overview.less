@@ -1,0 +1,49 @@
+@import '../../config/theme.less';
+
+.container {
+    color: #fff;
+    height: 167px;
+    background-size: cover;
+    background-image: ~"url(./background.jpg)";
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.item {
+    font-size: 26px;
+    text-align: center;
+    border-right: 2px solid #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.content {
+    display: inline-block;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: @medium-space;
+}
+
+.markedness {
+    font-size: 40px;
+}
+
+.month {
+    &:after {
+        width: 20px;
+        height: 15px;
+        content: '';
+        display: inline-block;
+        margin-left: @small-space / 2;
+        background-size: 100%;
+        background-image: ~"url(./triangle.png)";
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}

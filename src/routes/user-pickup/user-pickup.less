@@ -1,0 +1,116 @@
+@import '../../config/theme';
+
+.has {
+}
+
+.date {
+    padding: 23px 0;
+    text-align: center;
+    font-size: 28px;
+    color: @text-color-second;
+    border-bottom: 2px solid #e9e9e9;
+    span {
+        padding-left: 40px;
+        background-image: ~"url(./calendar.png)";
+        background-size: 28px 28px;
+        background-repeat: no-repeat;
+        background-position: 0 center;
+    }
+}
+
+.qr {
+    margin: 150px auto 0 auto;
+    p {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: @text-color-first;
+    }
+    .qrimg {
+        width: 440px;
+        height: 440px;
+        margin: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        background-image: ~"url(./bg-qr.png)";
+        background-size: 440px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    img {
+        display: block;
+        width: 420px;
+        height: 420px;
+    }
+}
+
+.claimCode {
+    font-size: 32px;
+    text-align: center;
+    color: @text-color-first;
+    margin-top: 120px;
+    span {
+        user-select: text;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 15px 33px;
+        background-color: #d8d8d8;
+    }
+}
+
+.description {
+    color: #0d92ef;
+    font-size: 26px;
+    text-align: center;
+    position: fixed;
+    bottom: 37px;
+    left: 0;
+    right: 0;
+    span {
+        padding-left: 37px;
+        background-image: ~"url(./icon-description.png)";
+        background-size: 28px;
+        background-position: 0 center;
+        background-repeat: no-repeat;
+    }
+}
+
+.descriptionContainer {
+    padding: 25px 30px;
+    color: @text-color-first;
+    font-size: 30px;
+}
+
+.noOrder {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    height: 800px;
+    text-align: center;
+    padding-top: 466px;
+    background-image: ~"url(./no-order.png)";
+    background-repeat: no-repeat;
+    background-position: center top 262px;
+    background-size: 337px 148px;
+    box-sizing: border-box;
+    p {
+        margin-bottom: 42px;
+        color: @text-color-third;
+        font-size: 28px;
+    }
+    :global(.am-button) {
+        height: 48px;
+        font-size: 28px;
+        line-height: 48px;
+        padding-left: 26px;
+        padding-right: 26px;
+        display: inline-block;
+        margin-right: 12px;
+        margin-left: 12px;
+        border-radius: 24px;
+        a {
+            color: #fff;
+        }
+    }
+}

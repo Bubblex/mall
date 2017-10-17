@@ -1,0 +1,119 @@
+@import '../../config/theme';
+
+.tabs {
+    :global(.am-tabs-bar) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 333;
+        position: fixed;
+    }
+}
+
+.tabPane {
+    padding-top: @header-height;
+
+    p {
+        font-size: 28px;
+    }
+
+    .price {
+        font-size: 32px;
+        color: @main-color;
+    }
+
+    .orderId {
+        color: @text-color-third;
+    }
+
+    .status {
+        color: #ff5400;
+    }
+
+    .allPrice {
+        color: @text-color-second;
+    }
+
+    :global(.am-button) {
+        height: 48px;
+        font-size: 28px;
+        line-height: 48px;
+        padding-left: 26px;
+        padding-right: 26px;
+        display: inline-block;
+        a {
+            color: #fff;
+        }
+    }
+
+    :global(.am-list-body) {
+        background: @body-color;
+    }
+}
+
+.calendar {
+    margin-top: 22px;
+    text-align: center;
+    margin-bottom: 22px;
+    p {
+        color: #666;
+        font-size: 24px;
+        &:before {
+            top: 4px;
+            content: '';
+            width: 27px;
+            height: 27px;
+            margin-right: 14px;
+            position: relative;
+            display: inline-block;
+            background: ~"url(./calendar.png)";
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.orderItem {
+    margin-bottom: 16px;
+
+    :global(.am-list-body) {
+        border-top: none;
+    }
+
+    :global(.am-list-body:after) {
+        border-bottom: none;
+    }
+
+    :global(.am-list-content) {
+        img {
+            width: 126px;
+            height: 110px;
+            margin-right: 14px;
+        }
+    }
+}
+
+
+.noOrder {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    height: 800px;
+    text-align: center;
+    padding-top: 466px;
+    background-image: ~"url(./no-order.png)";
+    background-repeat: no-repeat;
+    background-position: center top 262px;
+    background-size: 334px 134px;
+
+    p {
+        margin-bottom: 42px;
+        color: @text-color-third;
+    }
+    :global(.am-button) {
+        margin-right: 12px;
+        margin-left: 12px;
+        border-radius: 24px;
+    }
+}

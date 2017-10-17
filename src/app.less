@@ -1,0 +1,144 @@
+@import './config/theme';
+
+html,
+body,
+:global(#root) {
+    height: 100%;
+}
+
+:global(#root) > div {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: @font-family-base;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    color: @color-link;
+}
+
+:global(.am-flexbox) {
+    // 覆盖默认的 margin
+    &.flexNoMargin {
+        :global(.am-flexbox-item) {
+            margin-left: 0;
+        }
+    }
+    :global(.am-flexbox-item) {
+        // 自动宽度
+        &.flexAutoWidth {
+            flex: 0 1 auto;
+        }
+    }
+}
+
+.highLightText {
+    color: @main-color;
+}
+
+.smStepper {
+    @size: 50px;
+
+    :global {
+        .am-stepper {
+            height: @size;
+            line-height: @size;
+        }
+        .am-stepper.showNumber {
+            width: 180px;
+        }
+        .am-stepper-input {
+            width: 60px;
+        }
+        .am-icon-xxs {
+            width: 20px;
+            height: 20px;
+        }
+        .am-stepper-input-wrap {
+            height: @size;
+            line-height: 38px;
+        }
+        .am-stepper-handler,
+        .am-stepper-handler-up-inner, .am-stepper-handler-down-inner {
+            width: @size;
+            height: @size;
+            line-height: 38px;
+        }
+    }
+}
+
+.fillCheckbox {
+    :global {
+        .am-checkbox-inner {
+            border-width: 1px;
+        }
+        .am-checkbox.am-checkbox-checked .am-checkbox-inner {
+            background-color: @main-color;
+
+            &:after {
+                top: 4px;
+                right: 14px;
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.radio {
+    width: 34px;
+    height: 34px;
+    :global{
+        .am-radio {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid @text-color-third;
+        }
+        .am-radio.am-radio-checked {
+            background-color: @main-color;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid @main-color;
+        }
+        .am-radio.am-radio-checked .am-radio-inner{
+            &:after {
+                width: 10px;
+                height: 22px;
+                top: 4px;
+                right: 14px;
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.tabsFixedTop {
+    :global {
+        .am-tabs-bar {
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 333;
+            position: fixed;
+        }
+
+        .am-tabs-content {
+            padding-top: @header-height;
+        }
+    }
+}
